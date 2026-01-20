@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Properties</title>
+
+  <style>
+    .box{
+      background-color: lightcoral;
+    }
+
+    .container{
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding: 10px;  
+    }
+
+    .flex-container{
+      display: flex;
+      gap: 10px;
+    }
+
+    .grid-container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Display Property Examples</h1>
+
+  <h2>Block & Inline</h2>
+
+  <div class="container">
+    <div class="box" style="display: block; background-color: aqua;">Block Element</div>
+    <div class="box" style="display: inline; background-color: aqua;">Inline Element</div>
+  </div>
+  </div>
+
+  <h2>Inline Block</h2>
+  
+  <div class="container">
+    <div class="box" style="display: inline-block; background-color: rgb(0,255,229);">Inline-Block Element</div>
+    <div class="box" style="display: inline; background-color: rgb(0,251,229);">Inline Element</div>
+  </div>
+  </div>
+
+<h2>None Display</h2>
+
+<div class="container">
+  <div class="box" style="display: none;">You can't see me. Im hidden or been displayed as none</div>
+</div>
+
+<h2>Flex Display</h2>
+
+<div class="container flex-container">
+  <div class="box">Flex item 1</div>
+  <div class="box">Flex item 2</div>
+  <div class="box">Flex item 3</div>
+</div>
+
+<h2>Grid Display</h2>
+
+<div class="container grid-container">
+  <div class="box">Grid item 1</div>
+  <div class="box">Grid item 2</div>
+  <div class="box">Grid item 3</div>
+  <div class="box">Grid item 4</div>
+  <div class="box">Grid item 5</div>
+  <div class="box">Grid item 6</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning</title>
+
+  <style>
+    .container{
+      position: relative;
+      height: 300px;
+      background: #eee;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    .box{
+      width: 100px;
+      height: 100px;
+      color: white;
+      padding: 10px;
+    }
+
+    .static{
+      position: static;
+      background: #9c27b0;
+
+      /* For static position, the top and left movements have no effect.
+      top: 20px;
+      left: 20px; */
+    }
+
+    .relative{
+      position: relative;
+      top: 20px;
+      left: 20px;
+      background: #3f51b5;
+    }
+
+    .absolute{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: red;
+    }
+
+    .fixed{
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      background: #4caf50;
+    }
+
+    .sticky{
+      position: sticky;
+      top: 0;
+      background: #ffff00;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Positioning Examples</h2>
+
+  <div class="container">
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+    <div class="box absolute">Absolute</div>
+  </div>
+
+  <div class="sticky">Sticky</div>
+
+  <p style="height: 1000px;">
+    Scroll to see the fixed box stays at the connect.
+  </p>
+
+  <div class="box fixed">Fixed</div>
+  
+</body>
+</html>
